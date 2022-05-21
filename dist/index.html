@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script type="module" crossorigin src="/assets/index.42fe4937.js"></script>
+    <link rel="stylesheet" href="/assets/index.0c173acf.css">
+  </head>
+  <body class="h-screen">
+    <header
+      class="p-8 flex justify-between md:pl-52 fixed top-0 w-full py-4 bg-main-100/90"
+    >
+      <button class="text-white p-2 rounded-sm px-4 text-sm bg-sky-700 ml-8">
+        <i class="fa fa-ban mr-2 text-red-400"></i>
+        Prohibited items
+      </button>
+      <div class="flex items-center space-x-5 text-white">
+        <button class="p-2 rounded-sm text-white bg-orange-600 text-sm px-4">
+          <i class="fa fa-crown text-[gold] mr-2"></i>
+          Upgrade plan
+        </button>
+        <button class="p-2 rounded-sm text-white bg-slate-500 text-sm px-4">
+          <i class="fa fa-basket-shopping"></i>
+          Track order
+        </button>
+        <i class="fa fa-bars"></i>
+
+        <span
+          class="rounded-full w-8 h-8 grid place-items-center bg-white text-teal-500"
+        >
+          P
+        </span>
+      </div>
+    </header>
+    <div class="flex h-full w-full">
+      <!-- side  bar  -->
+      <aside class="w-56 bg-main-100/90 block">
+        <!-- aside menu 1  -->
+
+        <ul
+          class="w-full mt-24 text-sm border-b-2 border-slate-900 py-4 px-2 text-white font-bold"
+        >
+          <li class="my-4 px-4">
+            <i class="fa fa-bars mr-2"></i>
+            Dashboard
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-bars mr-2"></i>
+            Locker
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-truck mr-2"></i>
+            Shipment
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-shopping-cart mr-2"></i>
+            Personal shoper
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-store mr-2"></i>
+            Indian stores
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-tags mr-2"></i>
+            Coupons available
+          </li>
+        </ul>
+
+        <!-- second menu div  -->
+        <ul
+          class="text-sm font-semibold text-white py-4 px-2 border-b-2 border-slate-900"
+        >
+          <p class="text-sm text-sky-600/90 font-[500]">Help</p>
+          <li class="my-4 px-4">
+            <i class="fa fa-ban mr-2"></i>
+            Prohibited items
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa mr-2 fa-globe"></i>
+            Country guides
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-calculator mr-2"></i>
+            Shipping calculator
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-blog mr-2"></i>
+            Blog
+          </li>
+        </ul>
+        <!-- your stuff div  -->
+        <ul
+          class="text-sm font-semibold text-white py-4 px-2 border-b-2 border-slate-900"
+        >
+          <p class="text-sm text-sky-600/90 font-[500]">Your stuff</p>
+          <li class="my-4 px-4">
+            <i class="fa fa-users mr-2"></i>
+            Reffer and earn
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa mr-2 fa-user-circle"></i>
+            Profile
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-wallet mr-2"></i>
+            Wallet
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-book mr-2"></i>
+            Address book
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-id-card mr-2"></i>
+            Documents
+          </li>
+          <li class="my-4 px-4">
+            <i class="fa fa-list-check mr-2"></i>
+            Shipping preferences
+          </li>
+        </ul>
+      </aside>
+      <div
+        class="overflow-y-auto w-[calc(100%-12rem)] bg-slate-200 h-full pt-20 px-8 pb-8 mb-8 flex flex-col lg:flex-row justify-between"
+      >
+        <!-- main section  -->
+        <div class="lg:w-[65%] w-full">
+          <!-- profile  -->
+          <div class="bg-white shadow-md p-5 w-full my-6">
+            <!-- name  -->
+            <div class="flex justify-between px-[10%]">
+              <div>
+                <p class="text-slate-500">Welcome</p>
+                <h4 class="text-xl font-bold">Prajwal</h4>
+              </div>
+              <button
+                class="text-sm px-4 rounded-md font-semibold bg-sky-600 text-white"
+              >
+                Upgrade membership
+                <i class="fa fa-crown ml-2"></i>
+              </button>
+            </div>
+            <!-- profile section icons  -->
+            <div class="flex flex-wrap mt-6 p-6 pb-0">
+              <!-- locker  -->
+              <div
+                class="flex items-center p-2 px-4 w-full shadow-sm md:w-[50%]"
+              >
+                <i
+                  class="fa fa-lock p-3 block text-white bg-rose-500 rounded-md"
+                ></i>
+                <div class="mx-4 text-sm">
+                  <p class="text-[12px] text-slate-600">Locker number</p>
+                  <h4>sc 954 48965-05-49</h4>
+                </div>
+              </div>
+              <!-- wallet  -->
+              <div
+                class="flex items-center p-2 px-4 w-full shadow-sm md:w-[50%]"
+              >
+                <i
+                  class="fa fa-wallet p-3 block text-white bg-green-500 rounded-md"
+                ></i>
+                <div class="mx-4 text-sm">
+                  <p class="text-[12px] text-slate-600">Shoppe wallet</p>
+                  <h4>48965-05-49</h4>
+                </div>
+              </div>
+              <!-- mobile number -->
+              <div
+                class="flex items-center p-2 px-4 w-full shadow-sm md:w-[50%] my-4"
+              >
+                <i
+                  class="fa fa-phone p-3 block text-white bg-sky-500 rounded-md"
+                ></i>
+                <div class="mx-4 text-sm">
+                  <p class="text-[12px] text-slate-600">Phone number</p>
+                  <h4>448965-05-49</h4>
+                </div>
+              </div>
+              <!-- email -->
+              <div
+                class="flex items-center p-2 px-4 w-full shadow-sm md:w-[50%] my-4"
+              >
+                <i
+                  class="fa fa-envelope p-3 block text-white bg-orange-500 rounded-md"
+                ></i>
+                <div class="mx-4 text-sm">
+                  <p class="text-[12px] text-slate-600">Email</p>
+                  <h4>prajwal.lfhs@gmail.com</h4>
+                </div>
+              </div>
+            </div>
+
+            <div></div>
+          </div>
+          <!-- stats section  -->
+          <div
+            class="flex flex-wrap justify-between space-y-4 lg:space-y-0 mt-8"
+          >
+            <div
+              class="rounded-md w-full flex flex-col items-center justify-center md:w-60 shadow-md shadow-slate-400 h-40 bg-white border-b-4 border-rose-500"
+            >
+              <img src="/assets/Frontend design.fff00c81.png" alt="" class="w-12 h-12" />
+              <p class="text-slate-500 text-sm">Locker</p>
+              <h4>0 packages</h4>
+            </div>
+            <div
+              class="flex rounded-md flex-col items-center justify-center w-full md:w-56 shadow-md shadow-slate-400 h-40 bg-white border-b-4 border-orange-400"
+            >
+              <img src="/assets/truck.f137a03f.png" alt="" class="w-16 h-16" />
+              <p class="text-slate-500 text-sm">Shipments</p>
+              <h4>2 packages</h4>
+            </div>
+            <!-- stats section  -->
+
+            <div
+              class="rounded-md flex flex-col items-center justify-center w-full md:w-60 shadow-md shadow-slate-400 h-40 bg-white border-b-4 border-green-500"
+            >
+              <img src="/assets/delivery.70c269e4.png" alt="" class="w-16 h-16" />
+              <p class="text-slate-500 text-sm">Delivered</p>
+              <h4>0 packages</h4>
+            </div>
+          </div>
+          <!-- last section  -->
+          <div class="bg-white w-full shadow-md mt-8">
+            <h4 class="text-center block font-bold py-6">Start shoping !</h4>
+
+            <!-- icons divs  -->
+            <div
+              class="flex flex-wrap items-center justify-center md:justify-between px-6 space-x-8 space-y-8"
+            >
+              <div class="py-4 md:w-60 text-center space-y-2 px-4 mt-8">
+                <img
+                  src="/assets/cart.a3898f0e.png"
+                  alt="cart"
+                  class="w-36 h-36 border rounded-full block mx-auto"
+                />
+                <p class="text-slate-500 text-sm">
+                  Shop from indian websites
+                </p>
+              </div>
+              <div class="p-4 w-52 space-y-2">
+                <img
+                  src="/assets/map.57213074.png"
+                  alt="cart"
+                  class="w-36 h-36 border rounded-full block mx-auto"
+                />
+                <p class="text-slate-500 text-sm">
+                  Shop from indian websites
+                </p>
+              </div>
+              <div class="p-4 space-y-2 w-52">
+                <img
+                  src="/assets/man.c0d9a90b.png"
+                  alt="cart"
+                  class="w-36 h-36 border rounded-full block mx-auto"
+                />
+                <p class="text-slate-500 text-sm">
+                  Shop from indian websites
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- form section  -->
+        <div>
+          <form
+            action="/"
+            class="w-full lg:w-[25vw] h-auto pb-4 bg-white block mt-8"
+          >
+            <h2
+              class="bg-sky-500 text-white text-center text-md font-semibold p-4 py-2"
+            >
+              Your virtual indian address
+            </h2>
+            <!-- name  -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">Name</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Prajwal"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- address line 1  -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">Address line 1</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="ring rode"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- address line 2  -->
+
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">Address line 2</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Agara sector 1"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- landmark  -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">Landmark</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="something"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- city  -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">City</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Bengluru"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- state  -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">State</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Karnataka"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- pincode -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">Pincode</h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="560201"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <!-- delivery phone number  -->
+            <div class="px-6 my-4">
+              <h4 class="text-slate-500 my-0 text-sm">
+                Delivery phone number
+              </h4>
+              <div class="flex items-center">
+                <input
+                  type="text"
+                  placeholder="+91 4959 4549 66"
+                  class="border rounded-md rounded-br-none rounded-tr-none text-slate-500 outline-none w-[80%] py-1 px-4"
+                />
+                <i
+                  class="fa fa-clipboard text-slate-500 rounded-bl-none rounded-tl-none bg-slate-200 text-lg border px-4 py-2 rounded-md"
+                ></i>
+              </div>
+            </div>
+            <p class="text-red-500 text-[12px] my-4 px-4">
+              This phone number is for delivery purposes only , we do not
+              provides any customoer service via this phone number.
+            </p>
+            <h4 class="text-center text-md">
+              Note : Enter home as address type
+            </h4>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
